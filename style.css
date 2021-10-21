@@ -29,9 +29,9 @@ padding: 15px;
 display: grid;
 gap: 5px;
 grid-template-areas: 
-    'header header header'
-    'sidebar content content'
-    'footer footer footer'
+    'header header header header'
+    'sidebar content content content'
+    'footer footer footer footer'
 ;
 }
 
@@ -46,9 +46,11 @@ border: 1px solid blue;
 }
 #sidebar {
     grid-area: sidebar;
+    height: 70vh;
 }
 #content {
     grid-area: content;
+    height: 70vh;
 }
 #footer {
     grid-area: footer;
