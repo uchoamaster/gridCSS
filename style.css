@@ -22,7 +22,7 @@ border: 1px solid blue;
 
 /*Templates areas*/
 
-.container {
+/* .container {
 background-color: #333;
 border: 3px solid red;
 padding: 15px;
@@ -54,4 +54,25 @@ border: 1px solid blue;
 }
 #footer {
     grid-area: footer;
-}
+} */
+
+/*alinhamento*/
+.container {
+    background-color: #333;
+    border: 3px solid red;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    height: 50vh;
+    /*horizontal*/
+    justify-content: center;
+    /*vertical*/
+    align-items: center;
+    }
+    
+    .container div {
+    background-color: #ccc;
+    padding: 20px;
+    border: 1px solid blue;
+    }
+    
