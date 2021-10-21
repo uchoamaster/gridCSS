@@ -1,21 +1,55 @@
 /*css basico para entender o conteito*/
 
+/* .container {
+background-color: #333;
+border: 3px solid red;
+padding: 15px; */
+/* display: grid; com este comando eu ativo a grid em meu leiaute, mas nao muda nada, pq ele aguarda configurações */
+/* grid-template-columns: 50px auto 10%; com este comando eu começo a mudar meu leiaute e divido sempre meu grid em 3 partes x x x */
+/*resumindo o que eu fiz, foi dizer para o grid que a primeira coluna terá 50px obrigatoriamente, a segunda tamanho automático e a ultima tamanho de 10%*/
+/* height: 35vh;
+grid-template-rows: 70% 30%;
+gap: 5px; */
+/* grid-row-gap: 10px;
+grid-column-gap: 15px; */ /* espaçamento entre linhas e entre colunas*/
+/* } */
+
+/* .container div {
+background-color: #ccc;
+padding: 20px;
+border: 1px solid blue;
+} */
+
+/*Templates areas*/
+
 .container {
 background-color: #333;
 border: 3px solid red;
 padding: 15px;
-display: grid; /*com este comando eu ativo a grid em meu leiaute, mas nao muda nada, pq ele aguarda configurações*/
-grid-template-columns: 50px auto 10%; /*com este comando eu começo a mudar meu leiaute e divido sempre meu grid em 3 partes x x x */
-/*resumindo o que eu fiz, foi dizer para o grid que a primeira coluna terá 50px obrigatoriamente, a segunda tamanho automático e a ultima tamanho de 10%*/
-height: 35vh;
-grid-template-rows: 70% 30%;
+display: grid;
 gap: 5px;
-/* grid-row-gap: 10px;
-grid-column-gap: 15px; */ /* espaçamento entre linhas e entre colunas*/
+grid-template-areas: 
+    'header header header'
+    'sidebar content content'
+    'footer footer footer'
+;
 }
 
 .container div {
 background-color: #ccc;
 padding: 20px;
 border: 1px solid blue;
+}
+
+#header {
+    grid-area: header;
+}
+#sidebar {
+    grid-area: sidebar;
+}
+#content {
+    grid-area: content;
+}
+#footer {
+    grid-area: footer;
 }
